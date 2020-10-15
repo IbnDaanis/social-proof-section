@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark-magenta: #502050;
+  --primary-pink: #ee68a4;
+  --dark-grey-magenta: #937b92;
+  --light-grey-magenta: #f7f2f7;
+
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Spartan', sans-serif;
+  background: url('./images/bg-pattern-top-desktop.svg') no-repeat;
+  // background: url('./images/bg-pattern-bottom-desktop.svg') no-repeat;
+  .background-bottom{
+    position: absolute;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw;
+    background: url('./images/bg-pattern-bottom-desktop.svg') right bottom no-repeat;
+  }
+}
+
+.container{
+  max-width: 1200px;
+  width: 93%;
+  margin: 8rem auto;
+  @media(max-width: 700px){
+    margin: 6rem auto 0;
+  }
+  .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+    @media(max-width: 700px){
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
+    .card-text{
+      min-width: 300px;
+      width: 40%;
+      @media(max-width: 700px){
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+      .heading{
+        font-size: 3rem;
+        color:var(--primary-dark-magenta);
+        margin-bottom: 0.8rem;
+        @media(max-width: 700px){
+          text-align: center;
+          font-size: 2.5rem;
+        }
+      }
+      .description{
+        color: var(--primary-dark-magenta);
+        line-height: 1.8rem;
+        @media(max-width: 700px){
+          text-align: center;
+        }
+      }
+    }
+    .ratings{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      @media(max-width: 700px){
+        width: 100%;
+      }
+      .rating{
+        display: flex;
+        padding: 1.4rem 2.3rem;
+        margin: 0.8rem 0;
+        background: var(--light-grey-magenta);
+        border-radius: 10px;
+        @media(max-width: 700px){
+          flex-direction: column;
+          padding: 1rem 1.8rem;
+        }
+        .rating-stars{
+          display: flex;
+          margin-right: 2rem;
+          @media(max-width: 700px){
+            margin: 0;
+            justify-content: center;
+            margin-bottom: 0.8rem;
+          }
+          i{
+            color: orange;
+          }
+        }
+      }
+      .rating-text{
+        font-weight: 700;
+        color: var(--primary-dark-magenta);
+        @media(max-width: 700px){
+          text-align: center;
+        }
+      }
+    }
+    .rating-1{
+      transform: translateX(-80px);
+      @media(max-width: 700px){
+        transform: translateX(0);
+      }
+    }
+    .rating-2{
+      transform: translateX(-40px);
+      @media(max-width: 700px){
+        transform: translateX(0);
+      }
+    }
+  }
+
+
+
+  .reviews{
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 700px){
+      flex-direction: column;
+    }
+    .card{
+      background: var(--primary-dark-magenta);
+      min-width: 300px;
+      width: 32%;
+      border-radius: 10px;
+      padding: 3rem 1.7rem;
+      @media(max-width: 700px){
+        flex-direction: column;
+        width: 100%;
+        padding: 2.6rem 1.7rem;
+        margin-bottom: 1rem;
+      }
+      .profile{
+        display: flex;
+        &-picture{
+          border-radius: 50%;
+          width: 50px;
+          margin-right: 1.2rem;
+          img{
+            border-radius: 50%;
+            width: 100%;
+          }
+        }
+        &-name{
+          margin: 0.2rem 0 2rem;
+          h4{
+            color: white;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+          }
+          p{
+            font-size: 1rem;
+            color: var(--primary-pink);
+            font-weight: 600;
+          }
+        }
+      }
+      .review{
+        p{
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 300;
+          line-height: 150%;
+          @media(max-width: 700px){
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .card-2{
+      transform: translateY(20px);
+      @media(max-width: 700px){
+        transform: translateY(0);
+      }
+    }
+    .card-3{
+      transform: translateY(40px);
+      @media(max-width: 700px){
+        transform: translateY(0);
+      }
+    }
+
+  }
+}
+
+footer {
+  padding: 2rem;
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: rgb(0, 0, 0);
+  }
+}
+
