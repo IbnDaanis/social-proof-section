@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :root {
@@ -17,7 +16,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Spartan', sans-serif;
-  background: url('./images/bg-pattern-top-desktop.svg') no-repeat;
+  background: url("../images/bg-pattern-top-desktop.svg") no-repeat;
 }
 
 body .background-bottom {
@@ -25,8 +24,7 @@ body .background-bottom {
   pointer-events: none;
   height: 100vh;
   width: 100vw;
-  background: url('./images/bg-pattern-bottom-desktop.svg') right bottom
-    no-repeat;
+  background: url("../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
 }
 
 .container {
@@ -46,11 +44,11 @@ body .background-bottom {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 6rem;
 }
 
@@ -58,8 +56,8 @@ body .background-bottom {
   .container .top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 3rem;
   }
 }
@@ -107,8 +105,8 @@ body .background-bottom {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 700px) {
@@ -131,8 +129,8 @@ body .background-bottom {
   .container .top .ratings .rating {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1rem 1.8rem;
   }
 }
@@ -148,8 +146,8 @@ body .background-bottom {
   .container .top .ratings .rating .rating-stars {
     margin: 0;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 0.8rem;
   }
 }
@@ -171,25 +169,25 @@ body .background-bottom {
 
 .container .top .rating-1 {
   -webkit-transform: translateX(-80px);
-  transform: translateX(-80px);
+          transform: translateX(-80px);
 }
 
 @media (max-width: 700px) {
   .container .top .rating-1 {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 .container .top .rating-2 {
   -webkit-transform: translateX(-40px);
-  transform: translateX(-40px);
+          transform: translateX(-40px);
 }
 
 @media (max-width: 700px) {
   .container .top .rating-2 {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -198,16 +196,16 @@ body .background-bottom {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 700px) {
   .container .reviews {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -223,8 +221,8 @@ body .background-bottom {
   .container .reviews .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     padding: 2.6rem 1.7rem;
     margin-bottom: 1rem;
@@ -279,25 +277,25 @@ body .background-bottom {
 
 .container .reviews .card-2 {
   -webkit-transform: translateY(20px);
-  transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 @media (max-width: 700px) {
   .container .reviews .card-2 {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 .container .reviews .card-3 {
   -webkit-transform: translateY(40px);
-  transform: translateY(40px);
+          transform: translateY(40px);
 }
 
 @media (max-width: 700px) {
   .container .reviews .card-3 {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
