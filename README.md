@@ -1,4 +1,4 @@
-# Huddle Landing Page
+# Social Proof Section
 
 [Link to my solution](https://ibndaanis.github.io/social-proof-section/)
 
